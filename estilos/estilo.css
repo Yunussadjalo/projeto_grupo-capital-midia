@@ -23,36 +23,39 @@ header{
     width: 100%;
 }
 
-.cabeçalho{
-    margin: auto;
-    padding: 10px;
-    display: flex;
+.cabeçalho{/* display: flex;
     align-items:flex-end;
-    justify-content:left;  
-}
-div p{
-    font-size: 1.6em;
-    font-weight: bolder;
-    color: var(--cor01);
-    width:100%;
-    padding: 10px;
+    justify-content:left; */
+    min-height: 100px;
+    padding: 20px;
+    position: relative;
     
+}
+div h1{
+    position: absolute;
+    left: 2%;
+    bottom: 10%;
 }
 
 .logo{
-   width: 30%;
+   
 }
 .logo img{
-    width: 30px;
-    margin-left: 5px;
+    position: absolute;
+    left: 20%;
+    bottom: 10%;
 }
 
 .radios{
-    width: 10%;
+    position: absolute;
+    left: 90%;
+    bottom: 10%;
 }
 
 .menu{
-   width: 50%; 
+   position: absolute;
+    left: 35%;
+    bottom: 10%; 
    
 }
 
@@ -68,25 +71,20 @@ header h1{
 }
 
 main{
-    background-color: white;
     min-width: 300px;
     max-width: 1000px;
+    background-color: white;
     margin: auto;
     padding: 20px;
     box-shadow: 5px 5px 10px black;
+    position: relative;
 }
 
-main div{
-    display:inline-block;
-    background-color: var(--cor01);
-    border: 1px solid black;
-    width: 200px;
-    height: 200px;  
-}
 
 section{
     width: 660px;
-   
+    border: 1px solid black;
+    
 }
 section article{
     margin-top: 10px;
@@ -101,13 +99,22 @@ article p{
 }
 
 aside{
+    height: 90%;
+    width: 300px;
     border: 1px solid var(--cor05);
-    width: 260px;
     padding: 10px;
-   
-    
+    position: absolute;
+    bottom: 55%;
+    left: 65%;
+    transform: translate(8%,57%);   
 }
+aside div{
+    height: 150px;
+    width: 300px;
+    background-color: var(--cor01);
+    border: 1px solid black;
 
+}
 
 
 footer{
