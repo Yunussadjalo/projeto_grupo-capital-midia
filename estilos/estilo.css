@@ -82,7 +82,8 @@ main{
 
 
 section{
-    width: 660px;
+    max-width: 60vw;
+    
     border: 1px solid black;
     
 }
@@ -99,20 +100,21 @@ article p{
 }
 
 aside{
-    height: 90%;
-    width: 300px;
+    width: 20vw;
     border: 1px solid var(--cor05);
     padding: 10px;
     position: absolute;
     bottom: 55%;
-    left: 65%;
-    transform: translate(8%,57%);   
+    left: 68%;
+    transform: translate(5%,57%);   
 }
 aside div{
-    height: 150px;
-    width: 300px;
+    height: 100px;
+    width: 20vw;
     background-color: var(--cor01);
     border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
 
 }
 
