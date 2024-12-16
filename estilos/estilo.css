@@ -3,6 +3,8 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 :root{
@@ -13,62 +15,35 @@
     --cor05: #400101;
 }
 
-
 body{
     background-color: var(--cor02);
 }
 
+.cabeçalho{
+    max-width: 1280px;
+    margin: auto;
+}
 header{
-    background-image: linear-gradient(to bottom, var(--cor05), var(--cor03), var(--cor04));
     width: 100%;
+    padding: 20px 0px;
 }
 
-.cabeçalho{/* display: flex;
-    align-items:flex-end;
-    justify-content:left; */
-    min-height: 100px;
-    padding: 20px;
-    position: relative;
-    
-}
-div h1{
-    position: absolute;
-    left: 2%;
-    bottom: 10%;
+header .cabeçalho{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
 }
 
-.logo{
-   
-}
-.logo img{
-    position: absolute;
-    left: 20%;
-    bottom: 10%;
+header .logo img{
+    max-width: 40px;
 }
 
-.radios{
-    position: absolute;
-    left: 90%;
-    bottom: 10%;
+header .menu-desktop nav a{
+     margin: 0px 30px;
+     color: white;
+     text-decoration: none;
 }
 
-.menu{
-   position: absolute;
-    left: 35%;
-    bottom: 10%; 
-   
-}
-
-.menu nav a{
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    padding-right: 30px;
-}
-
-header h1{
-    color: white;
-}
 
 main{
     min-width: 300px;
@@ -77,12 +52,12 @@ main{
     margin: auto;
     padding: 20px;
     box-shadow: 5px 5px 10px black;
-    position: relative;
+   
 }
 
 
-section{
-    max-width: 60vw;
+main section{
+    max-width: 100%;
     
     border: 1px solid black;
     
@@ -98,26 +73,6 @@ article p{
     font-size: 1em;
     line-height: 1.5em;
 }
-
-aside{
-    width: 20vw;
-    border: 1px solid var(--cor05);
-    padding: 10px;
-    position: absolute;
-    bottom: 55%;
-    left: 68%;
-    transform: translate(5%,57%);   
-}
-aside div{
-    height: 100px;
-    width: 20vw;
-    background-color: var(--cor01);
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
-
-}
-
 
 footer{
     color: white;
